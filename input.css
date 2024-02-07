@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ficon:hover {
+  filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
+    brightness(101%) contrast(96%);
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+    cursor: pointer;
+    width: 22px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: #fff;
+}
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+    position: fixed;
+    top: 50px;
+    right: 25px;
+}
+  
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+    background-color: #fff;
+}
+  
+.open .hamburger-middle {
+    display: none;
+}
+  
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    background-color: #fff;
+}
+
+/* btn director */
+.btn-director {
+  cursor: pointer;
+  width: 22px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.first-line,
+.second-line,{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 22px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.first-line, .second-line {
+  transform: translateX(7px);
+}
+
+.second-line{
+  transform: rotate(90deg)
+}
+
+/* current(active) page */
+.nav-link[aria-current="page"] {
+  color: #F67E7E;
+}
+
+/* flip card */
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card .flipped {
+  background: #002529;
+  transform: perspective(700px) rotateY(180deg);
+  transition-duration: 600ms;
+}
+
+.card .flipped .btn-color {
+  background:#79C8C7;
+}
+.card .flipped .btn-color:hover {
+  background:#F67E7E;
+}
+
+.card .action-back {
+  transform: rotateY(180deg);
+}
+
+/* error message */
+
+.input-control.valid input {
+  border-color: #79C8C7;
+}
+
+.input-control.invalid input, {
+  border-color: #f67e7e;
+}
+
+.input-control.error-placehoder input::placeholder{
+  color: #f67e7e;
+}
+
+.input-control .error{
+  color: #f67e7e;
+  @apply pl-4 pt-1 text-xs italic;
+}
