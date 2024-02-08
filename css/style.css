@@ -925,6 +925,10 @@ video {
   overflow-x: hidden;
 }
 
+.overscroll-contain {
+  overscroll-behavior: contain;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1348,8 +1352,8 @@ video {
   border-color: #79C8C7;
 }
 
-.input-control.invalid input, {
-  border-color: #f67e7e;
+.input-control.invalid input {
+  border-color: #F67E7E;
 }
 
 .input-control.error-placehoder input::-moz-placeholder{
@@ -1711,3 +1715,4 @@ video {
     line-height: 1.75rem;
   }
 }
+

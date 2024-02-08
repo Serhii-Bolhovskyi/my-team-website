@@ -4,7 +4,7 @@ const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('emailAddress');
 const companyInput = document.getElementById('companyName');
 const titleInput = document.getElementById('title');
-const messageTextarea = document.getElementById('messageArea');
+const messageInput = document.getElementById('messageArea');
 
 // Add event listener for form submission
 form.addEventListener('submit', event => {
@@ -44,7 +44,7 @@ const validateInputs = () => {
     const emailValue = emailInput.value.trim();
     const companyValue = companyInput.value.trim();
     const titleValue = titleInput.value.trim();
-    const messageValue = messageTextarea.value.trim();
+    const messageValue = messageInput.value.trim();
 
     // Validate name input
     if (nameValue === '') {
@@ -78,9 +78,9 @@ const validateInputs = () => {
 
     // Validate message input
     if (messageValue === '') {
-        setError(messageTextarea, 'Message is required');
+        setError(messageInput, 'Message is required');
     } else {
-        setSuccess(messageTextarea);
+        setSuccess(messageInput);
     }
 };
 

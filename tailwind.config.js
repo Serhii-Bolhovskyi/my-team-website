@@ -20,7 +20,6 @@ module.exports = {
         jungleGreen: '#004047',
         stateGreen: '#012F34',
         darkGreen: "#002529",
-        errorColor:' #f67e7e',
       },
       fontFamily: {
         sans: ['Livvic', 'sans-serif'],

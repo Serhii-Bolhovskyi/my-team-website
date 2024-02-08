@@ -125,8 +125,8 @@
   border-color: #79C8C7;
 }
 
-.input-control.invalid input, {
-  border-color: #f67e7e;
+.input-control.invalid input {
+  border-color: #F67E7E;
 }
 
 .input-control.error-placehoder input::placeholder{
@@ -137,3 +137,4 @@
   color: #f67e7e;
   @apply pl-4 pt-1 text-xs italic;
 }
+

@@ -69,4 +69,4 @@ So, if you also want to use TailwindCss framework in your projects, it's tutoria
 9. In `index.html` file pase: ```<link rel="stylesheet" href="css/style.css">```
 
 10. And the last thing we gonna do, run our script in order to automatically rebuild after we saved changes:
-    ```npm run watch```
+```npm run watch```
