@@ -49,7 +49,7 @@ So, if you also want to use TailwindCss framework in your projects, it's tutoria
         plugins: [],}
     ```
 
-6. Create a folder `input.css`. Add the @tailwind directives for each of Tailwind’s layers to your main CSS file:
+6. Create a file `input.css`. Add the @tailwind directives for each of Tailwind’s layers to your main CSS file:
    ```
     @tailwind base;
     @tailwind components;
