@@ -30,36 +30,43 @@ All needed image you can find in folder `images`.
 So, if you also want to use TailwindCss framework in your projects, it's tutorial for you.
 
 1. Create a folder and open it in VScode;
+
 2. Open your `TERMINAL` and write:
-    - ```npm init -y``` and press enter. This should create `package.json` file.
+     ```npm init -y``` and press enter. This should create `package.json` file.
+
 3. The next thing we gonna do is install `tailwindcss` in `TERMINAL`:
-    - ```npm i -D tailwindcss```. This should create `node_modules` folder and also `package-lock.json`;
+     ```npm i -D tailwindcss```. This should create `node_modules` folder and also `package-lock.json`;
+
 4. The next: 
     ```npx tailwindcss init```. We should get file `tailwind.config.js`;
+
 5. In your `tailwind.config.js` write this:
-    - ```
-    module.exports = {
-    content: ["./*.html"],
-    theme: {
-        extend: {},
-    },
-    plugins: [],}
-  ```
+    ```module.exports = {
+        content: ["./*.html"],
+        theme: {
+            extend: {},
+        },
+        plugins: [],}
+    ```
+
 6. Create a folder `input.css`. Add the @tailwind directives for each of Tailwind’s layers to your main CSS file:
-   - ```
+   ```
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
    ```
+
 7. In `package.json` in area `scripts`, we creat scripts for build our CSS:
-    - ```
+    ```
     "scripts": {
     "build": "tailwindcss -i ./input.css -o ./css/style.css",
     "watch": "tailwindcss -i ./input.css -o ./css/style.css --watch"
     },
-  ```
+    ```
 8. In `TERMINAL` run:
-    - ```npm run build```. This should create a folder `css` with file inside `style.css`
+    ```npm run build```. This should create a folder `css` with file inside `style.css`
+
 9. In `index.html` file pase: ```<link rel="stylesheet" href="css/style.css">```
+
 10. And the last thing we gonna do, run our script in order to automatically rebuild after we saved changes:
-    - ```npm run watch```
+    ```npm run watch```
